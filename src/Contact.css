@@ -1,0 +1,60 @@
+.contact {
+  background-color: slategray;
+  padding: 15rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  background-color: rgb(117, 134, 151);
+  width: 500px;
+  max-width: 600px;
+  padding: 2rem;
+  font-family: helvetica;
+  font-size: large;
+  border: 1px solid rgb(153, 174, 196);
+  border-radius: 0.8rem;
+  box-shadow: 2px 5px 35px rgb(97, 102, 124);
+}
+input,
+label,
+button {
+  display: block;
+  width: 100%;
+}
+label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: rgb(219, 233, 248);
+}
+input {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  border: 1px solid rgb(153, 174, 196);
+  background: none;
+  border-radius: 0.5rem;
+  background-color: rgb(101, 115, 129);
+  position: relative;
+  font-family: helvetica;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+button {
+  background-color: rgb(184, 57, 57);
+  padding: 1.3rem 1rem;
+  font-size: 1.3rem;
+  border: none;
+  color: wheat;
+  border-radius: 0.5rem;
+  margin: 4rem 0 2rem 0;
+  box-shadow: 2px 6px 6px rgb(97, 102, 124);
+}
+small {
+  position: relative;
+  display: block;
+  color: rgb(184, 57, 57);
+  text-align: right;
+  bottom: 0.5rem;
+}

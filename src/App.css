@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(135deg, #05043d 0%, #004781 100%);
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  display: block;
+}
+h1 {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  z-index: 5;
+  font-family: "Bungee Inline", cursive;
+  font-size: 1.5rem;
+  text-align: right;
+  color: wheat;
+  padding: 1rem;
+}
+
+.nav {
+  height: 7rem;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 10rem;
+  background-image: linear-gradient(to right, slategray, rgb(68, 81, 94));
+}
+
+.imageComp {
+  padding: 12rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  height: 450px;
+  width: 300px;
+  margin: 1rem;
+  position: relative;
+  perspective: 35rem;
+}
+
+.box__front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: all 0.5s ease;
+  backface-visibility: hidden;
+  border-radius: 1.4rem;
+  overflow: hidden;
+}
+
+.box__back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: rotateY(180deg);
+  transition: all 0.5s ease;
+  border-radius: 1.4rem;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 0, 0),
+    rgba(152, 0, 0, 0.623)
+  );
+}
+
+.box:hover {
+}
+
+.box:hover .box__front {
+  transform: rotateY(-180deg);
+}
+.box:hover .box__back {
+  transform: rotateY(0deg);
+  box-shadow: 2px 5px 45px blue;
+}
+
+.userImage {
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 90%);
+}
