@@ -81,9 +81,6 @@ h1 {
   );
 }
 
-.box:hover {
-}
-
 .box:hover .box__front {
   transform: rotateY(-180deg);
 }
